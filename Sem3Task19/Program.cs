@@ -6,7 +6,7 @@
 // Считываем данные пользователя
 int n = ReadData("Введите число: ");
 // Проверка на пятизначность
-if (n > 10000&&n<100000)
+if (n > 9999 && n < 100000)
 {
     // Проверяем на палиндром
     if (PalinTest(n) == true)
@@ -22,13 +22,13 @@ else
 {
     PrintData("Число не пятизначное.");
 }
-Метод читает данные от пользователя
+// Метод читает данные от пользователя
 int ReadData(string msg)
 {
     Console.WriteLine(msg);
     return int.Parse(Console.ReadLine() ?? "0 ");
 }
-Выводит результат
+// Выводит результат
 void PrintData(string msg1)
 {
     Console.WriteLine(msg1);
